@@ -96,3 +96,13 @@ if __name__ == "__main__":
     test_sort(choise_sort)
     test_sort(bubble_sort)
 
+
+# доступ к первому элементу словаря
+
+import collections
+
+text = "aabBcde"
+d_count = collections.Counter(text.lower())
+print(d_count)
+first_values = list(d_count.keys())[0]
+print(first_values)
